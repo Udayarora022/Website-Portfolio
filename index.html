@@ -1,215 +1,897 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uday Arora - Computer Engineer & Web Developer with 3D Dark Theme Portfolio. Specializing in Node.js,Express.js,React.js,C++,SQL,MongoDB,PostgreSQL,Python.">
+    <meta name="keywords" content="computer engineer, web developer, react developer, python programmer, data analyst, 3d portfolio, MERN stack, full stack developer">
+    <meta name="author" content="Uday Arora">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#00f5ff">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Uday Arora | 3D Dark Portfolio - Computer Engineer">
+    <meta property="og:description" content="Passionate Computer Engineer crafting immersive digital experiences with cutting-edge web technologies and Backend">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://udayarora.dev">
+    <meta property="og:image" content="assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Uday Arora | 3D Dark Portfolio - Computer Engineer">
+    <meta name="twitter:description" content="Passionate Computer Engineer crafting immersive digital experiences with cutting-edge web technologies">
+    <meta name="twitter:image" content="assets/img/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/darktheme.css">
+    <link rel="stylesheet" href="assets/css/3d-components.css">
+    <link rel="stylesheet" href="assets/css/responsive-dark.css">
+    
+    <!-- Icon Libraries -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Uday Arora",
+        "jobTitle": "Computer Engineer & Web Developer",
+        "description": "Passionate Computer Engineer specializing in web development and data analytics",
+        "url": "https://udayarora.dev",
+        "sameAs": [
+            "https://github.com/Udayarora022",
+            "https://www.linkedin.com/in/udayarora022/",
+            "mailto:arorauday526@gmail.com"
+        ],
+        "knowsAbout": ["React", "Python", "JavaScript", "Node.js", "MongoDB", "Data Analytics", "MERN Stack"],
+        "alumniOf": "Thapar Institute of Engineering and Technology"
+    }
+    </script>
+    
+    <title>Uday Arora | 3D Dark Portfolio - Computer Engineer & Web Developer</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen-3d" aria-hidden="true">
+        <div class="loader-3d">
+            <div class="cube-loader" role="progressbar" aria-label="Loading portfolio">
+                <div class="cube-face cube-front">UA</div>
+                <div class="cube-face cube-back">UA</div>
+                <div class="cube-face cube-right">UA</div>
+                <div class="cube-face cube-left">UA</div>
+                <div class="cube-face cube-top">UA</div>
+                <div class="cube-face cube-bottom">UA</div>
+            </div>
+        </div>
+    </div>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon/icons/devicon/devicon.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Navigation -->
+    <header class="header-3d" id="header" role="banner">
+        <nav class="nav-container-3d" role="navigation" aria-label="Main navigation">
+            <div class="logo-section-3d">
+                <a href="#home" class="logo-text-3d" aria-label="Uday Arora - Home">
+                    <span class="logo-neon">Uday</span>
+                    <span class="logo-accent">Arora</span>
+                </a>
+                <span class="logo-subtitle-3d">Computer Engineer</span>
+            </div>
+            
+            <div class="nav-menu-3d" id="nav-menu">
+                <ul class="nav-list-3d" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link-3d active" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link-3d" role="menuitem">About</a></li>
+                    <li role="none"><a href="#skills" class="nav-link-3d" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#work" class="nav-link-3d" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#contact" class="nav-link-3d" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions-3d">
+                <a href="https://drive.google.com/file/d/1B-JNRLoCFb4l-Ipf5k3bmCkTd-Nbb47L/view?usp=sharing" class="cta-button-3d" target="_blank" rel="noopener noreferrer" aria-label="Download Resume (opens in new tab)">
+                    <i class='bx bx-download' aria-hidden="true"></i>
+                    <span>Resume</span>
+                    <div class="button-glow"></div>
+                </a>
+                <button class="nav-toggle-3d" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-
-        <title>Uday Arora Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Uday Arora</a>
+    <main class="main-content-3d" id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero-section-3d" id="home" role="banner">
+            <div class="hero-background-3d" aria-hidden="true">
+                <div class="gradient-overlay-dark"></div>
+                <div class="geometric-shapes">
+                    <div class="shape-3d shape-cube"></div>
+                    <div class="shape-3d shape-pyramid"></div>
+                    <div class="shape-3d shape-sphere"></div>
+                    <div class="shape-3d shape-torus"></div>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects & Experience</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Uday Arora</span><br>Computer Engineer</h1>
-
-                    <a href="file:///C:/Users/Uday%20arora/Downloads/Uday%20Arora_Resume.pdf" class="button">Resume</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://arorauday526@gmail.com" class="home__social-icon"><i class='bx bxl-gmail'></i></a>
-                    <a href="https://github.com/Udayarora022" class="home__social-icon"><i class='bx bxl-gitlab' ></i></a>
-                </div>
-
-               
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/Uday Arora image.jpeg" alt="">
+                <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+            </div>
+            
+            <div class="hero-content-3d container">
+                <div class="hero-text-3d">
+                    <span class="greeting-neon">Hello, I'm</span>
+                    <h1 class="hero-title-3d">
+                        <span class="name-neon">Uday Arora</span>
+                        <span class="typing-animation-3d" id="typing-text" aria-live="polite"></span>
+                    </h1>
+                    <p class="hero-description-3d">
+                        Passionate Computer Engineer crafting immersive digital experiences with modern web technologies and scalable backend solutions.
+                    </p>
+                    
+                    <div class="hero-actions-3d">
+                        <a href="#work" class="btn-3d btn-primary-3d" aria-label="Explore my work section">
+                            <span>Explore My Work</span>
+                            <div class="btn-glow" aria-hidden="true"></div>
+                            <div class="btn-particles" aria-hidden="true"></div>
+                        </a>
+                        <a href="#contact" class="btn-3d btn-secondary-3d" aria-label="Go to contact section">
+                            <span>Get In Touch</span>
+                            <div class="btn-glow" aria-hidden="true"></div>
+                        </a>
                     </div>
                     
-                    <div>
-                        <h2 class="about__subtitle">I am Uday Arora</h2>
-                        <p class="about__text">A Passionate Computer Engieering student from Thapar Institute of Engineering and Technology  . With a keen interst in Technology specializing in skills such as Data Analytics and Web Dev Technologies.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills__container bd-grid">
-                    <div class="skills__grid">
-                        <!-- Left Column for Skills -->
-                        <div class="skills__data">
-                            <img src=assets/img/c-.png class="skills__icon" style="width:24px; height:24px;">
-                            <span class="skills__name">C++</span>
+                    <div class="hero-stats-3d" role="group" aria-label="Portfolio statistics">
+                        <div class="stat-item-3d">
+                            <span class="stat-number-3d" data-target="8+" aria-label="8+ projects completed">0</span>
+                            <span class="stat-label-3d">Projects</span>
                         </div>
-                        <div class="skills__data">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
+                        <div class="stat-item-3d">
+                            <span class="stat-number-3d" data-target="Fresher" aria-label="Fresher">0</span>
+                            <span class="stat-label-3d">Years Experience</span>
                         </div>
-                        <div class="skills__data">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__data">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JavaScript</span>
-                        </div>
-                        <div class="skills__data">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon/icons/mysql/mysql-original.svg" class="skills__icon" style="width:24px; height:24px;">
-                            <span class="skills__name">MySQL</span>
-                        </div>            
-                        <div class="skills__data">
-                            <i class="fas fa-code"></i>  <!-- Represents coding in general -->
-                            <span class="skills__name">Data Structures and Algorithms</span>
+                        <div class="stat-item-3d">
+                            <span class="stat-number-3d" data-target="12" aria-label="12 technologies mastered">0</span>
+                            <span class="stat-label-3d">Technologies</span>
                         </div>
                     </div>
-                    <!-- Right Column for Skills -->
-                    <div class="skills__grid">
-                        <div class="skills__data">
-                            <i class='bx bx-data skills__icon'></i>
-                            <span class="skills__name">Data Analysis</span>
+                </div>
+                
+                <div class="hero-visual-3d">
+                    <div class="profile-3d-container">
+                        <div class="profile-hologram" aria-hidden="true">
+                            <div class="hologram-ring ring-1"></div>
+                            <div class="hologram-ring ring-2"></div>
+                            <div class="hologram-ring ring-3"></div>
                         </div>
-                        <div class="skills__data">
-                            <img src=assets/img/python.png class="skills__icon" style="width:24px; height:24px;">
-                            <span class="skills__name">Python</span>    
+                        
+                        <div class="profile-card-3d">
+                            <div class="card-glow" aria-hidden="true"></div>
+                            <div class="card-inner">
+                                <img src="assets/img/Uday Arora image.jpeg" alt="Uday Arora - Computer Engineer and Web Developer" class="profile-image-3d" loading="eager">
+                                <div class="profile-overlay" aria-hidden="true">
+                                    <div class="scan-line"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skills__data">
-                            <i class="fas fa-file-excel"></i> <!-- Generic Excel Icon -->
-                            <span class="skills__name">Excel</span>
+                        
+                        <div class="floating-tech-3d" aria-hidden="true">
+                            <div class="tech-orb" data-tech="React" title="React.js">
+                                <i class='bx bxl-react' aria-hidden="true"></i>
+                                <div class="orb-glow"></div>
+                            </div>
+                            <div class="tech-orb" data-tech="Python" title="Python">
+                                <i class='bx bxl-python' aria-hidden="true"></i>
+                                <div class="orb-glow"></div>
+                            </div>
+                            <div class="tech-orb" data-tech="JavaScript" title="JavaScript">
+                                <i class='bx bxl-javascript' aria-hidden="true"></i>
+                                <div class="orb-glow"></div>
+                            </div>
+                            <div class="tech-orb" data-tech="Database" title="Database Management">
+                                <i class='bx bx-data' aria-hidden="true"></i>
+                                <div class="orb-glow"></div>
+                            </div>
                         </div>
-                        <div class="skills__data">
-                            <i class='bx bxl-git skills__icon'></i>
-                            <span class="skills__name">Git</span>
-                        </div>
-                        <div class="skills__data">
-                            <i class="fas fa-robot"></i> <!-- Generic AI/Robot Icon could represent ChatGPT -->
+                    </div>
+                </div>
+            </div>
+            
+            <aside class="social-sidebar-3d" aria-label="Social media links">
+                <div class="social-line" aria-hidden="true"></div>
+                <a href="mailto:arorauday526@gmail.com" class="social-link-3d" title="Send me an email" aria-label="Email">
+                    <i class='bx bxl-gmail' aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Udayarora022" class="social-link-3d" title="Visit my GitHub profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class='bx bxl-github' aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/udayarora022/" class="social-link-3d" title="Connect on LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin' aria-hidden="true"></i>
+                </a>
+                <div class="social-line" aria-hidden="true"></div>
+            </aside>
+            
+            <div class="scroll-indicator-3d" aria-hidden="true">
+                <div class="scroll-text">Scroll to Explore</div>
+                <div class="scroll-arrow">
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </div>
+        </section>
 
-                            <span class="skills__name">ChatGPT</span>
+        <!-- About Section -->
+        <section class="about-section-3d section-3d" id="about">
+            <div class="container">
+                <header class="section-header-3d">
+                    <span class="section-tag-3d">Get To Know Me</span>
+                    <h2 class="section-title-3d">About Me</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                </header>
+                
+                <div class="about-content-3d">
+                    <div class="about-text-3d">
+                        <article class="about-card-3d">
+                            <h3 class="about-subtitle">Hi, I'm Uday Arora 👋</h3>
+                            <p class="about-description">
+                                A passionate Computer Engineering student at <strong>Thapar Institute of Engineering and Technology</strong>, specializing in crafting innovative digital solutions using modern web technologies. I bring strong knowledge of <strong>ERP systems</strong>, with hands-on experience in tools like <strong>SAP S/4HANA</strong> and <strong>SAP Business Technology Platform (SAP BTP)</strong>, enabling seamless integration of business processes with technical solutions.
+                            </p>
                             
+                            <div class="expertise-grid">
+                                <div class="expertise-item">
+                                    <div class="expertise-icon" aria-hidden="true">
+                                        <i class='bx bx-code-alt'></i>
+                                    </div>
+                                    <div class="expertise-content">
+                                        <h4>Full Stack Development</h4>
+                                        <p>MERN stack applications with modern UI/UX</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="expertise-item">
+                                    <div class="expertise-icon" aria-hidden="true">
+                                        <i class='bx bx-data'></i>
+                                    </div>
+                                    <div class="expertise-content">
+                                        <h4>Data Handling and Backend</h4>
+                                        <p>Design and manage efficient systems to store, process, and serve data</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="about-visual-3d">
+                        <div class="about-image-container">
+                            <div class="image-frame-3d">
+                                <img src="assets/img/Uday Arora image.jpeg" alt="Uday Arora working on computer engineering projects" class="about-image-3d" loading="lazy">
+                                <div class="frame-glow" aria-hidden="true"></div>
+                            </div>
                         </div>
-                        <div class="skills__data">
-                            <i class="fa-brands fa-react"></i> <!---->
-                            <span class="skills__name">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section-3d section-3d" id="skills">
+            <div class="container">
+                <header class="section-header-3d">
+                    <span class="section-tag-3d">My Arsenal</span>
+                    <h2 class="section-title-3d">Technical Skills</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                </header>
+                
+                <div class="skills-container-3d">
+                    <article class="skills-category-3d">
+                        <h3 class="category-title-3d">
+                            <i class='bx bx-code-alt' aria-hidden="true"></i>
+                            Frontend Development
+                        </h3>
+                        <div class="skills-grid-3d">
+                            <div class="skill-card-3d" data-skill="html">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-html5'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>HTML5</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 skill level: 90%">
+                                        <div class="progress-bar-3d" data-progress="90"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                            
+                            <div class="skill-card-3d" data-skill="css">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-css3'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>CSS3</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 skill level: 85%">
+                                        <div class="progress-bar-3d" data-progress="85"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                            
+                            <div class="skill-card-3d" data-skill="javascript">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-javascript'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>JavaScript</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript skill level: 80%">
+                                        <div class="progress-bar-3d" data-progress="80"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">80%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                            
+                            <div class="skill-card-3d" data-skill="react">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-react'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>React</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="React skill level: 75%">
+                                        <div class="progress-bar-3d" data-progress="75"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">75%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="skills-category-3d">
+                        <h3 class="category-title-3d">
+                            <i class='bx bx-server' aria-hidden="true"></i>
+                            Backend & Data
+                        </h3>
+                        <div class="skills-grid-3d">
+                            <div class="skill-card-3d" data-skill="python">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-python'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>Python</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level: 85%">
+                                        <div class="progress-bar-3d" data-progress="85"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                            
+                            <div class="skill-card-3d" data-skill="mysql">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bx-data'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>MySQL</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL skill level: 80%">
+                                        <div class="progress-bar-3d" data-progress="80"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">80%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                            
+                            <div class="skill-card-3d" data-skill="nodejs">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-nodejs'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>Node.js</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js skill level: 70%">
+                                        <div class="progress-bar-3d" data-progress="70"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">70%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                            
+                            <div class="skill-card-3d" data-skill="mongodb">
+                                <div class="skill-icon-3d" aria-hidden="true">
+                                    <i class='bx bxl-mongodb'></i>
+                                </div>
+                                <div class="skill-info-3d">
+                                    <h4>MongoDB</h4>
+                                    <div class="skill-progress-3d" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB skill level: 75%">
+                                        <div class="progress-bar-3d" data-progress="75"></div>
+                                        <span class="progress-text-3d" aria-hidden="true">75%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-glow" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+       <!-- ===================================================
+     PROJECTS & INTERNSHIPS – 3D DARK THEME (8 cards)
+=================================================== -->
+<section class="projects-section-3d section-3d" id="work">
+    <div class="container">
+        <header class="section-header-3d">
+            <span class="section-tag-3d">My Work</span>
+            <h2 class="section-title-3d">Featured Projects and Internships</h2>
+            <div class="title-underline" aria-hidden="true"></div>
+        </header>
+
+        <div class="projects-grid-3d">
+            <!-- ======= PROJECT 1 (Trendora) ======= -->
+            <!-- (unchanged – kept for reference) -->
+            <article class="project-card-3d featured-project">
+                <div class="project-image-3d">
+                    <img src="assets/img/Logo.png" alt="Trendora E-commerce platform screenshot" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            <a href="https://trendora.vercel.app/" class="project-link-3d live" target="_blank" rel="noopener noreferrer" aria-label="View Trendora live demo">
+                                <i class='bx bx-link-external' aria-hidden="true"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Udayarora022" class="project-link-3d code" target="_blank" rel="noopener noreferrer" aria-label="View Trendora source code">
+                                <i class='bx bxl-github' aria-hidden="true"></i> Code
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects & Experience</h2>
-                <div class="work__container bd-grid">
-                    <!-- Project 1 -->
-                    <div class="work__card">
-                        <img src="assets/img/image.png" alt="Project 1 Image" class="work__img">
-                        <br>
-                        <h3 class="work__title">Summer Internship</h3>
-                        <p class="work__description">Completed Internship with Xebia IT Architects Pvt Ltd.:</p>
-                        <ul class="work__tech">
-                            <hr>
-                            <li>HTML</li>
-                            <li>Css</li>
-                            <li>Java Script</li>
-                        </ul>
-                        <a href="assets/img/UDAY ARORA_Xebia.pdf" class="button" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="work__card">
-                        <img src="assets/img/Logo.png" alt="Project 1 Image" class="work__img">
-                        <br>
-                        <h3 class="work__title">Trendora Website</h3>
-                        <p class="work__description">Developed a clothing website, 'Trendora,' using the MERN stack (MongoDB, Express, React, and Node.js):</p>
-                        <ul class="work__tech">
-                            <hr>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>MongoDB</li>
-                            <li>Express</li>
-                            <li>React</li>
-                        </ul>
-                        <a href="https://trendora.vercel.app/" class="button" target="_blank">View Project</a>
-                    </div>
-                    <!-- Project 2 -->
-                    <!-- Project 3 -->
-                    <div class="work__card">
-                        <img src="assets/img/dark.png" alt="Project 3 Image" style="width: 300px; height: auto;" class="work__img">
-                        <h3 class="work__title">Dark Webseries Characters Network</h3>
-                        <p class="work__description">Developed a comprehensive characters network for the 'Dark' web series using Python and JavaScript.</p>
-                        <ul class="work__tech">
-                            <hr>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <a href="https://darkudayarora.vercel.app//" class="button" target="_blank">View Project</a>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Full Stack</span>
+                        <h3 class="project-title-3d">Trendora E-commerce</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        Modern MERN-stack store with user auth, cart and payment integration.
+                    </p>
+                    <div class="tech-stack-3d" role="list" aria-label="Technologies used">
+                        <span class="tech-tag-3d react" role="listitem">React</span>
+                        <span class="tech-tag-3d node" role="listitem">Node.js</span>
+                        <span class="tech-tag-3d mongo" role="listitem">MongoDB</span>
+                        <span class="tech-tag-3d express" role="listitem">Express</span>
                     </div>
                 </div>
-            </section>
-            
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Interested In Working Together? Chat With Me!</h2>
-            
-                <div class="contact__container bd-grid">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2X1e21OEEpMru85EtOAaP85B-9lSUjsbOG4RxSCGEudX7Mw/viewform?usp=pp_url" width="50%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- ======= INTERNSHIP 1 (Xebia) ======= -->
+            <!-- (unchanged – kept for reference) -->
+            <article class="project-card-3d">
+                <div class="project-image-3d">
+                    <img src="assets/img/image.png" alt="Xebia IT Architects internship certificate" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            <a href="assets/img/UDAY ARORA_Xebia.pdf" class="project-link-3d certificate" target="_blank" rel="noopener noreferrer" aria-label="View Xebia internship certificate">
+                                <i class='bx bx-certification' aria-hidden="true"></i> Certificate
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Internship</span>
+                        <h3 class="project-title-3d">Xebia IT Architects</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        Eight-week web-development internship focused on modern JS tooling.
+                    </p>
+                    <div class="tech-stack-3d" role="list" aria-label="Technologies learned">
+                        <span class="tech-tag-3d html" role="listitem">HTML5</span>
+                        <span class="tech-tag-3d css" role="listitem">CSS3</span>
+                        <span class="tech-tag-3d js" role="listitem">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
+
+            <!-- ======= PROJECT 2 (Dark Network) ======= -->
+            <!-- (unchanged – kept for reference) -->
+            <article class="project-card-3d">
+                <div class="project-image-3d">
+                    <img src="assets/img/dark.png" alt="Dark series character network visualization" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            <a href="https://darkudayarora.vercel.app/" class="project-link-3d live" target="_blank" rel="noopener noreferrer" aria-label="View Dark character network demo">
+                                <i class='bx bx-link-external' aria-hidden="true"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Data Viz</span>
+                        <h3 class="project-title-3d">Dark Character Network</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        Interactive relationship graph for Netflix’s *Dark* using Python + D3.js.
+                    </p>
+                    <div class="tech-stack-3d" role="list" aria-label="Technologies used">
+                        <span class="tech-tag-3d python" role="listitem">Python</span>
+                        <span class="tech-tag-3d js" role="listitem">JavaScript</span>
+                        <span class="tech-tag-3d d3" role="listitem">D3.js</span>
+                    </div>
+                </div>
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
+
+            <!-- =================================================
+                 ↓↓↓  ADDITIONAL CARDS BELOW  ↓↓↓
+            ==================================================-->
+
+            <!-- ======= PROJECT 3 — PLACEHOLDER (TODO) ======= -->
+            <article class="project-card-3d">
+                <div class="project-image-3d">
+                    <!-- Replace placeholder.png with real screenshot -->
+                    <img src="assets/img/Youtube.jpg" alt="Project 3 preview" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            <a href="https://uamedia.netlify.app/" class="project-link-3d live" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                <i class='bx bx-link-external' aria-hidden="true"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Udayarora022/Youtube-Clone" class="project-link-3d code" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                <i class='bx bxl-github' aria-hidden="true"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Full Stack</span>
+                        <h3 class="project-title-3d">YouTube Clone</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        <!-- Short description (max ~20 words) -->
+                        Developed a full-stack YouTube clone using the MERN stack, Extracting data from Rapid-App API.
+                    </p>
+                    <div class="tech-stack-3d" role="list" aria-label="Technologies used">
+                        <span class="tech-tag-3d" role="listitem">React.js</span>
+                        <span class="tech-tag-3d" role="listitem">Rapid-API</span>
+                        <span class="tech-tag-3d" role="listitem">Material UI 5</span>
+                    </div>
+                </div>
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
+
+            <!-- ======= PROJECT 4 — PLACEHOLDER (TODO) ======= -->
+            <article class="project-card-3d">
+                <div class="project-image-3d">
+                    <img src="assets/img/BMS.jpg" alt="Project 4 preview" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            <a href="https://bms-wizcommerce-y24g.vercel.app/" class="project-link-3d live" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external' aria-hidden="true"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Udayarora022/Book-My-Slot" class="project-link-3d code" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bxl-github' aria-hidden="true"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Full Stack</span>
+                        <h3 class="project-title-3d">Book My Slot</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        A seamless booking platform enabling users to schedule appointments effortlessly, view availability, and manage slots with real-time updates
+                    </p>
+                    <div class="tech-stack-3d" role="list">
+                        <span class="tech-tag-3d" role="listitem">Node.js,Express.js,React.js</span>
+                        <span class="tech-tag-3d" role="listitem">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
+
+            <!-- ======= PROJECT 5 — PLACEHOLDER (TODO) ======= -->
+            <article class="project-card-3d">
+                <div class="project-image-3d">
+                    <img src="assets/img/NET.png" alt="Project 5 preview" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            
+                            </a>
+                            <a href="https://github.com/Udayarora022/Netflix_SQL" class="project-link-3d code" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bxl-github' aria-hidden="true"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Data Analysis Using PostgreSQL</span>
+                        <h3 class="project-title-3d">Project Five</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        Taken from Kaggle, this project involves analyzing Netflix data using PostgreSQL to extract insights on user behavior, content popularity, and trends.
+                    </p>
+                    <div class="tech-stack-3d" role="list">
+                        <span class="tech-tag-3d" role="listitem">PostgreSQL</span>
+                        <span class="tech-tag-3d" role="listitem">Kaggle-Dataset</span>
+                    </div>
+                </div>
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
+
+            <!-- ======= INTERNSHIP 2 — PLACEHOLDER (TODO) ======= -->
+            <article class="project-card-3d">
+                <div class="project-image-3d">
+                    <img src="assets/img/F.png" alt="Internship certificate preview" loading="lazy">
+                    <div class="project-overlay-3d">
+                        <div class="project-links-3d">
+                            <a href="https://drive.google.com/file/d/13qYqzMMEBSlk2fsrwIMQjGqkVKl91cqM/view?usp=sharing" class="project-link-3d certificate" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-certification' aria-hidden="true"></i> Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-content-3d">
+                    <header class="project-header-3d">
+                        <span class="project-type-3d">Internship</span>
+                        <h3 class="project-title-3d">Filix Consulting</h3>
+                    </header>
+                    <p class="project-description-3d">
+                        Worked on SAP S/4HANA Public Cloud and SAP BTP to create Custom CDS Views, Analytical Queries, and KPI dashboards.
+Gained hands-on experience with SAP Integration Suite for building and testing iFlows
+                    </p>
+                    <div class="tech-stack-3d" role="list">
+                        <span class="tech-tag-3d" role="listitem">SAP S/4HANA Public Edition</span>
+                        <span class="tech-tag-3d" role="listitem">SAP BTP-Integration Suite</span>
+                    </div>
+                </div>
+                <div class="project-glow" aria-hidden="true"></div>
+            </article>
+
+        </div> <!-- /.projects-grid-3d -->
+    </div> <!-- /.container -->
+</section>
+
+
+        <!-- Contact Section -->
+        <section class="contact-section-3d section-3d" id="contact">
+            <div class="container">
+                <header class="section-header-3d">
+                    <span class="section-tag-3d">Let's Connect</span>
+                    <h2 class="section-title-3d">Get In Touch</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                </header>
+                
+                <div class="contact-content-3d">
+                    <div class="contact-info-3d">
+                        <article class="contact-card-3d">
+                            <div class="contact-icon-3d" aria-hidden="true">
+                                <i class='bx bx-mail-send'></i>
+                            </div>
+                            <div class="contact-details-3d">
+                                <h3>Email Me</h3>
+                                <p>arorauday526@gmail.com</p>
+                                <a href="mailto:arorauday526@gmail.com" class="contact-link-3d" aria-label="Send me an email">Send Message</a>
+                            </div>
+                            <div class="card-glow-3d" aria-hidden="true"></div>
+                        </article>
+                        
+                        <article class="contact-card-3d">
+                            <div class="contact-icon-3d" aria-hidden="true">
+                                <i class='bx bx-phone'></i>
+                            </div>
+                            <div class="contact-details-3d">
+                                <h3>Call Me</h3>
+                                <p>+91-9781655489</p>
+                                <a href="tel:+919781655489" class="contact-link-3d" aria-label="Call me">Call Now</a>
+                            </div>
+                            <div class="card-glow-3d" aria-hidden="true"></div>
+                        </article>
+                        
+                        <article class="contact-card-3d">
+                            <div class="contact-icon-3d" aria-hidden="true">
+                                <i class='bx bx-map'></i>
+                            </div>
+                            <div class="contact-details-3d">
+                                <h3>Location</h3>
+                                <p>Punjab, India</p>
+                                <span class="contact-link-3d">Remote Available</span>
+                            </div>
+                            <div class="card-glow-3d" aria-hidden="true"></div>
+                        </article>
+                    </div>
+                    
+                    <div class="contact-form-container-3d">
+                        <form class="contact-form-3d" id="contact-form" novalidate>
+                            <div class="form-group-3d">
+                                <label for="name" class="form-label-3d">Your Name *</label>
+                                <input type="text" id="name" name="name" class="form-input-3d" required autocomplete="name" aria-describedby="name-error">
+                                <div class="input-glow" aria-hidden="true"></div>
+                                <span id="name-error" class="error-message" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group-3d">
+                                <label for="email" class="form-label-3d">Your Email *</label>
+                                <input type="email" id="email" name="email" class="form-input-3d" required autocomplete="email" aria-describedby="email-error">
+                                <div class="input-glow" aria-hidden="true"></div>
+                                <span id="email-error" class="error-message" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group-3d">
+                                <label for="subject" class="form-label-3d">Subject *</label>
+                                <input type="text" id="subject" name="subject" class="form-input-3d" required aria-describedby="subject-error">
+                                <div class="input-glow" aria-hidden="true"></div>
+                                <span id="subject-error" class="error-message" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group-3d">
+                                <label for="message" class="form-label-3d">Your Message *</label>
+                                <textarea id="message" name="message" class="form-textarea-3d" rows="6" required aria-describedby="message-error"></textarea>
+                                <div class="input-glow" aria-hidden="true"></div>
+                                <span id="message-error" class="error-message" role="alert"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn-3d btn-submit-3d" aria-describedby="submit-status">
+                                <span>Send Message</span>
+                                <i class='bx bx-send' aria-hidden="true"></i>
+                                <div class="btn-glow" aria-hidden="true"></div>
+                            </button>
+                            <div id="submit-status" class="sr-only" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-3d" role="contentinfo">
+        <div class="container">
+            <div class="footer-content-3d">
+                <div class="footer-info-3d">
+                    <h3 class="footer-name-3d">Uday Arora</h3>
+                    <p class="footer-tagline-3d">Crafting the future, one line of code at a time</p>
+                </div>
+                
+                <nav class="footer-social-3d" aria-label="Footer social media links">
+                    <a href="mailto:arorauday526@gmail.com" class="footer-social-link-3d" title="Email Uday Arora" aria-label="Email">
+                        <i class='bx bxl-gmail' aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Udayarora022" class="footer-social-link-3d" target="_blank" rel="noopener noreferrer" title="Visit Uday's GitHub profile" aria-label="GitHub">
+                        <i class='bx bxl-github' aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/udayarora022/" class="footer-social-link-3d" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin' aria-hidden="true"></i>
+                    </a>
+                </nav>
+            </div>
             
-        </main>
+            <div class="footer-bottom-3d">
+                <p class="footer-copyright-3d">
+                    © 2025 Uday Arora. Made with <i class='bx bx-heart' aria-hidden="true"></i> in India
+                </p>
+            </div>
+        </div>
+    </footer>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">  Uday Arora ❤️</p>
-            <p class="footer__copy">&#169; arorauday526@gmail.com | +91-9781655489 | Punjab , India </p>
-        </footer>
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top-3d" aria-label="Back to top" title="Back to top">
+        <i class='bx bx-up-arrow-alt' aria-hidden="true"></i>
+        <div class="button-glow" aria-hidden="true"></div>
+    </button>
 
+    <!-- Additional CSS for accessibility and enhancement -->
+    <style>
+        .skip-to-main {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--neon-cyan);
+            color: var(--bg-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+        
+        .skip-to-main:focus {
+            top: 6px;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        .error-message {
+            display: block;
+            color: var(--neon-pink);
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+            min-height: 1rem;
+        }
+        
+        .form-input-3d:invalid,
+        .form-textarea-3d:invalid {
+            border-color: var(--neon-pink);
+        }
+        
+        .form-input-3d:valid,
+        .form-textarea-3d:valid {
+            border-color: var(--neon-green);
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        @media (prefers-contrast: high) {
+            :root {
+                --neon-cyan: #ffffff;
+                --neon-pink: #ffffff;
+                --text-secondary: #ffffff;
+            }
+        }
+    </style>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- JavaScript Files -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/3d-effects.js"></script>
+    <script src="assets/js/dark-animations.js"></script>
+    
+    <!-- Service Worker for PWA (optional) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
 </html>
+
+
+
 

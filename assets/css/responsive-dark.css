@@ -1,0 +1,993 @@
+/* Responsive Design for 3D Dark Theme */
+
+/* Large Desktops */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title,
+    .hero-title-3d {
+        font-size: 5rem;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .profile-card-3d {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .about-image-3d,
+    .image-frame-3d {
+        width: 450px;
+        height: 500px;
+    }
+    
+    .skills-grid,
+    .skills-grid-3d {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .projects-grid,
+    .projects-grid-3d {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop */
+@media screen and (max-width: 1200px) {
+    .hero-title,
+    .hero-title-3d {
+        font-size: 4rem;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .profile-card-3d {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 280px;
+        height: 280px;
+        margin: 35px;
+    }
+    
+    .projects-grid,
+    .projects-grid-3d {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-card.featured,
+    .project-card-3d.featured-project {
+        grid-column: span 2;
+    }
+}
+
+/* Tablets and Large Mobile */
+@media screen and (max-width: 1024px) {
+    .hero-content,
+    .hero-content-3d {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-visual,
+    .hero-visual-3d {
+        order: -1;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .profile-card-3d {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 220px;
+        height: 220px;
+        margin: 40px;
+    }
+    
+    .floating-icon,
+    .tech-orb {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .about-content,
+    .about-content-3d {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .about-image,
+    .about-visual-3d {
+        order: -1;
+    }
+    
+    .image-container,
+    .image-frame-3d {
+        width: 350px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    
+    .skills-category,
+    .skills-category-3d {
+        padding: 1.5rem;
+    }
+    
+    .category-title,
+    .category-title-3d {
+        font-size: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) {
+    :root {
+        --section-padding: 80px 0;
+        --fs-6xl: 3rem;
+        --fs-5xl: 2.5rem;
+        --fs-4xl: 2rem;
+        --fs-3xl: 1.75rem;
+        --gap-xl: 2.5rem;
+        --gap-lg: 2rem;
+    }
+    
+    .nav-toggle-3d {
+        display: flex;
+    }
+    
+    .nav-menu-3d {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(0, 245, 255, 0.2);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition-smooth);
+        z-index: 999;
+    }
+    
+    .nav-menu-3d.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list-3d {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 0;
+    }
+    
+    .nav-link-3d {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 245, 255, 0.1);
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+    
+    .nav-actions-3d {
+        display: none;
+    }
+    
+    .hero-title,
+    .hero-title-3d {
+        font-size: 3rem;
+    }
+    
+    .typing-animation,
+    .typing-animation-3d {
+        font-size: 2rem;
+    }
+    
+    .hero-description,
+    .hero-description-3d {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .profile-card-3d {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 180px;
+        height: 180px;
+        margin: 40px;
+    }
+    
+    .floating-icon,
+    .tech-orb {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .hero-actions,
+    .hero-actions-3d {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-3d,
+    .btn-primary-3d,
+    .btn-secondary-3d {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .hero-stats,
+    .hero-stats-3d {
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .social-sidebar,
+    .social-sidebar-3d {
+        display: none;
+    }
+    
+    .skills-grid,
+    .skills-grid-3d {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skill-card,
+    .skill-card-3d {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .projects-grid,
+    .projects-grid-3d {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-card.featured,
+    .project-card-3d.featured-project {
+        grid-column: span 1;
+        display: block;
+    }
+    
+    .contact-content,
+    .contact-content-3d {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .contact-info,
+    .contact-info-3d {
+        order: 2;
+    }
+    
+    .contact-form-container,
+    .contact-form-container-3d {
+        order: 1;
+    }
+    
+    .footer-content,
+    .footer-content-3d {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .section-title,
+    .section-title-3d {
+        font-size: 2.5rem;
+    }
+    
+    .about-card-3d {
+        padding: 2rem;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .detail-item,
+    .expertise-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section-3d {
+        padding: 60px 0;
+    }
+    
+    :root {
+        --fs-6xl: 2.5rem;
+        --fs-5xl: 2rem;
+        --fs-4xl: 1.75rem;
+        --fs-3xl: 1.5rem;
+        --fs-2xl: 1.25rem;
+        --gap-xl: 2rem;
+        --gap-lg: 1.5rem;
+    }
+    
+    .nav-container-3d {
+        padding: 1rem;
+    }
+    
+    .logo-text-3d {
+        font-size: 1.5rem;
+    }
+    
+    .logo-subtitle-3d {
+        font-size: 0.7rem;
+    }
+    
+    .hero-section,
+    .hero-section-3d {
+        padding-top: 100px;
+    }
+    
+    .hero-title,
+    .hero-title-3d {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .typing-animation,
+    .typing-animation-3d {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description,
+    .hero-description-3d {
+        font-size: 1rem;
+    }
+    
+    .greeting,
+    .greeting-neon {
+        font-size: 1.2rem;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .profile-card-3d {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 150px;
+        height: 150px;
+        margin: 35px;
+    }
+    
+    .floating-icon,
+    .tech-orb {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .hologram-ring {
+        border-width: 1px;
+    }
+    
+    .hero-stats,
+    .hero-stats-3d {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .stat-item,
+    .stat-item-3d {
+        flex: 1;
+        min-width: 80px;
+    }
+    
+    .stat-number,
+    .stat-number-3d {
+        font-size: 2rem;
+    }
+    
+    .section-header,
+    .section-header-3d {
+        margin-bottom: 3rem;
+    }
+    
+    .section-title,
+    .section-title-3d {
+        font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .about-card-3d {
+        padding: 1.5rem;
+    }
+    
+    .image-container,
+    .image-frame-3d {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+    }
+    
+    .skills-category,
+    .skills-category-3d {
+        padding: 1.5rem;
+    }
+    
+    .category-title,
+    .category-title-3d {
+        font-size: 1.3rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .skill-card,
+    .skill-card-3d {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .skill-icon,
+    .skill-icon-3d {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+    
+    .project-card,
+    .project-card-3d {
+        margin-bottom: 1rem;
+    }
+    
+    .project-content,
+    .project-content-3d {
+        padding: 1.5rem;
+    }
+    
+    .project-title,
+    .project-title-3d {
+        font-size: 1.3rem;
+    }
+    
+    .project-links,
+    .project-links-3d {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-link,
+    .project-link-3d {
+        justify-content: center;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .tech-stack,
+    .tech-stack-3d {
+        gap: 0.25rem;
+    }
+    
+    .tech-tag,
+    .tech-tag-3d {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .contact-card,
+    .contact-card-3d {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .contact-icon,
+    .contact-icon-3d {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        align-self: center;
+    }
+    
+    .contact-form-container,
+    .contact-form-container-3d {
+        padding: 1.5rem;
+    }
+    
+    .form-input,
+    .form-textarea,
+    .form-input-3d,
+    .form-textarea-3d {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn,
+    .btn-submit-3d {
+        align-self: stretch;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-3d,
+    .btn-primary-3d,
+    .btn-secondary-3d {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .footer-name,
+    .footer-name-3d {
+        font-size: 1.5rem;
+    }
+    
+    .footer-copyright,
+    .footer-copyright-3d {
+        font-size: 0.8rem;
+    }
+    
+    .back-to-top,
+    .back-to-top-3d {
+        width: 45px;
+        height: 45px;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    .hero-title,
+    .hero-title-3d {
+        font-size: 2rem;
+    }
+    
+    .typing-animation,
+    .typing-animation-3d {
+        font-size: 1.5rem;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .profile-card-3d {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 120px;
+        height: 120px;
+        margin: 30px;
+    }
+    
+    .floating-icon,
+    .tech-orb {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .hero-stats,
+    .hero-stats-3d {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .section-title,
+    .section-title-3d {
+        font-size: 2rem;
+    }
+    
+    .logo-text-3d {
+        font-size: 1.3rem;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .skill-card,
+    .skill-card-3d {
+        padding: 1rem;
+    }
+    
+    .contact-card,
+    .contact-card-3d {
+        padding: 1rem;
+    }
+    
+    .project-content,
+    .project-content-3d {
+        padding: 1rem;
+    }
+}
+
+/* Landscape Orientation Fixes */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero-section,
+    .hero-section-3d {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .hero-content,
+    .hero-content-3d {
+        gap: 2rem;
+    }
+    
+    .profile-container,
+    .profile-3d-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-card-3d {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+    }
+    
+    .floating-icon,
+    .tech-orb {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .scroll-indicator,
+    .scroll-indicator-3d {
+        display: none;
+    }
+    
+    .hero-stats,
+    .hero-stats-3d {
+        gap: 1rem;
+    }
+    
+    .section-3d {
+        padding: 60px 0;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-image,
+    .profile-image-3d,
+    .about-img,
+    .about-image-3d {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+    
+    .project-image img,
+    .project-image-3d img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .geometric-shapes,
+    .floating-shapes,
+    .hologram-ring,
+    .profile-ring,
+    .profile-ring-2,
+    .floating-icon,
+    .tech-orb,
+    .particles-canvas,
+    .cube-loader {
+        animation: none !important;
+    }
+    
+    .scroll-indicator,
+    .scroll-indicator-3d {
+        animation: none !important;
+    }
+    
+    .shape,
+    .shape-3d {
+        animation: none !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark Theme Media Query Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0a0a0a;
+        --text-primary: #ffffff;
+        --text-secondary: #b3b3b3;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :root {
+        --neon-cyan: #ffffff;
+        --neon-pink: #ffffff;
+        --text-secondary: #ffffff;
+        --text-muted: #cccccc;
+        --gradient-neon: linear-gradient(45deg, #ffffff, #ffffff);
+    }
+    
+    .nav-link-3d:hover,
+    .nav-link-3d.active,
+    .greeting,
+    .greeting-neon {
+        text-shadow: none;
+        font-weight: 700;
+    }
+    
+    .profile-image,
+    .profile-image-3d {
+        border: 3px solid #ffffff;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header-3d,
+    .social-sidebar,
+    .social-sidebar-3d,
+    .scroll-indicator,
+    .scroll-indicator-3d,
+    .back-to-top,
+    .back-to-top-3d,
+    .nav-toggle-3d,
+    .geometric-shapes,
+    .floating-shapes,
+    .floating-tech-3d,
+    .floating-icons,
+    .particles-canvas,
+    .loading-screen-3d,
+    .cube-loader {
+        display: none !important;
+    }
+    
+    .hero-section,
+    .hero-section-3d {
+        background: #ffffff !important;
+        color: #000000 !important;
+        min-height: auto !important;
+    }
+    
+    .section-3d {
+        page-break-inside: avoid;
+        padding: 40px 0;
+    }
+    
+    .project-card,
+    .project-card-3d {
+        break-inside: avoid;
+    }
+    
+    .skill-card,
+    .skill-card-3d {
+        break-inside: avoid;
+    }
+    
+    * {
+        color: #000000 !important;
+        background: #ffffff !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        border-color: #000000 !important;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-3d,
+    .btn-primary-3d,
+    .btn-secondary-3d {
+        border: 2px solid #000000 !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 1cm;
+    }
+}
+
+/* Pointer Device Support */
+@media (pointer: coarse) {
+    .btn-primary,
+    .btn-secondary,
+    .btn-3d,
+    .btn-primary-3d,
+    .btn-secondary-3d,
+    .project-link,
+    .project-link-3d,
+    .contact-link,
+    .contact-link-3d,
+    .social-link,
+    .social-link-3d {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .nav-link-3d {
+        padding: 1rem;
+    }
+    
+    .floating-icon,
+    .tech-orb {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Hover Support */
+@media (hover: none) {
+    .project-overlay,
+    .project-overlay-3d {
+        opacity: 1;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 1rem;
+    }
+    
+    .project-card:hover,
+    .project-card-3d:hover {
+        transform: none;
+    }
+    
+    .skill-card:hover,
+    .skill-card-3d:hover {
+        transform: none;
+    }
+    
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-3d:hover,
+    .btn-primary-3d:hover,
+    .btn-secondary-3d:hover {
+        transform: none;
+    }
+}
+
+/* Animation Performance Optimization */
+@media screen and (max-width: 768px) {
+    .shape,
+    .shape-3d,
+    .floating-icon,
+    .tech-orb,
+    .hologram-ring,
+    .profile-ring,
+    .profile-ring-2 {
+        animation-duration: 8s;
+        will-change: auto;
+    }
+}
+
+/* Battery Optimization */
+@media (prefers-reduced-data: reduce) {
+    .particles-canvas,
+    .geometric-shapes,
+    .floating-shapes {
+        display: none;
+    }
+    
+    .profile-card-3d::before,
+    .card-glow,
+    .project-glow,
+    .skill-glow {
+        display: none;
+    }
+}
+
+/* Focus Management for Mobile */
+@media screen and (max-width: 768px) {
+    *:focus {
+        outline: 3px solid var(--neon-cyan);
+        outline-offset: 2px;
+    }
+    
+    .nav-link-3d:focus {
+        background: rgba(0, 245, 255, 0.2);
+    }
+}
+
